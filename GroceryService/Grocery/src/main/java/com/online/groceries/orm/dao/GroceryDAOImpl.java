@@ -26,7 +26,6 @@ public class GroceryDAOImpl implements GroceryDAO {
 	
 	@Override
 	public void addGrocery(Grocery grocery) {
-		// TODO Auto-generated method stub
 		logger.debug(loggPreString+" addGrocery: grocery =  "+grocery);
 		sessionFactory.getCurrentSession().save(grocery);
 	}
@@ -34,7 +33,6 @@ public class GroceryDAOImpl implements GroceryDAO {
 	
 	@Override
 	public void batchGroceryInsert(List<Grocery> groceryList) {
-		// TODO Auto-generated method stub
 		Query deleteQuery = sessionFactory.getCurrentSession().createSQLQuery(HibernateQueryConstants.QUERY_DELETE_GROCERY_TABLE);
 		deleteQuery.executeUpdate();
 		for (int i=0; i<= groceryList.size(); i++) {
@@ -59,14 +57,12 @@ public class GroceryDAOImpl implements GroceryDAO {
 
 	@Override
 	public Grocery getGroceryById(int groceryId) {
-		// TODO Auto-generated method stub
 		logger.debug(loggPreString+" getGroceryById, Lst:  "+groceryId);
 		return (Grocery)sessionFactory.getCurrentSession().get(Grocery.class, groceryId);
 	}
 
 	@Override
 	public List<Grocery> filterGroceryByName(String groceryName) {
-		// TODO Auto-generated method stub
 		Query hQuery = sessionFactory.getCurrentSession().createQuery(HibernateQueryConstants.QUERY_GROCERY_LIST_BY_NAME);
 		hQuery.setParameter("groceryName", '%'+groceryName+'%');
 		return hQuery.list();
@@ -74,7 +70,6 @@ public class GroceryDAOImpl implements GroceryDAO {
 
 	@Override
 	public List<Grocery> getGroceryList() {
-		// TODO Auto-generated method stub
 		List<Grocery> groceryList = sessionFactory.getCurrentSession().createQuery(HibernateQueryConstants.QUERY_GROCERY_LIST).list();
 		logger.debug(loggPreString+" getGroceryList, Lst:  "+groceryList);
 		return groceryList;
