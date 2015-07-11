@@ -1,0 +1,43 @@
+[{
+	"groceryId" : "1",
+    "groceryName" : "banana",
+    "groceryPrice" : 0.29,
+    "groceryStock" : 20,
+    "groceryUpdatedOn" : "2014-01-02"
+}, {
+	"groceryId" : "2",
+    "groceryName" : "melon",
+    "groceryPrice" : 1.01,
+    "groceryStock" : 3,
+    "groceryUpdatedOn" : "2014-03-28"
+}, {
+	"groceryId" : "3",
+    "groceryName" : "apple",
+    "groceryPrice" : 1.54,
+    "groceryStock" : 22,
+    "groceryUpdatedOn" : "2014-02-05"
+}, {
+	"groceryId" : "4",
+    "groceryName" : "pear",
+    "groceryPrice" : 0.41,
+    "groceryStock" : 12,
+    "groceryUpdatedOn" : "2014-04-19"
+}, {
+	"groceryId" : "5",
+    "groceryName" : "kumquat",
+    "groceryPrice" : 0.64,
+    "groceryStock" : 32,
+    "groceryUpdatedOn" : "2014-06-10"
+}, {
+	"groceryId" : "6",
+    "groceryName" : "orange",
+    "groceryPrice" : 2.04,
+    "groceryStock" : 19,
+    "groceryUpdatedOn" : "2014-05-25"
+}, {
+	"groceryId" : "7",
+    "groceryName" : "lemon",
+    "groceryPrice" : 1.56,
+    "groceryStock" : 9,
+    "groceryUpdatedOn" : "2014-12-30"
+}]

@@ -1,0 +1,11 @@
+The grocery application is basic version with good quality of code & unit testing.
+
+Still we can add much more standards for better production code base & maintainability
+
+Few of the possibilities are as below.
+
+1. We can add spring mvc level Exception handlers to control standard errors
+2. Error messages can be added to provide user on certain validations & failures 
+3. We can use Hibernate cache for performance
+4. Spring AOP can be better for tracking cross-cutting activities like logging.
+5. Can implement Junit / TestNG along with mockitho   
